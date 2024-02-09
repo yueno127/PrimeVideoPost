@@ -1,0 +1,98 @@
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: calc(100% - 20px);
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.save-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #008f68;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #007a58;
+}
+
+.button-group {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-btn {
+    background-color: #f45446;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.reset-btn:hover {
+    background-color: #e32f2f;
+}
+
+.save-message {
+    color: green;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    position: absolute;
+    pointer-events: none;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    text-align: center;
+    width: auto;
+}
+
+.fade-in-out {
+    opacity: 1;
+    animation: fadeOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}

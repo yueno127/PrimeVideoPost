@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>拡張機能のオプション</title>
+    <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ポスト設定</h1>
+        <p>ポストのテンプレートを設定してください。
+          {link}、{title}、{subtitle}キーワードを使用できます。
+          それぞれ動画のURL、タイトル、サブタイトル（シーズン、話数等を含む）に置換されます。</p>
+        <textarea id="template" rows="4" cols="50"></textarea>
+        <div id="saveMessage" class="save-message">保存されました</div>
+        <div class="button-group">
+          <button id="reset" class="btn reset-btn">リセット</button>
+          <button id="save" class="btn save-btn">設定を保存</button>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>
